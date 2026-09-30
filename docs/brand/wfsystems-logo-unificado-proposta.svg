@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 590 120" role="img" aria-labelledby="title desc">
+  <title id="title">WFSystems — proposta de logo unificado</title>
+  <desc id="desc">Nome WFSystems em uma única tipografia serifada. As letras WF recebem um degradê azul-marinho e turquesa.</desc>
+  <defs>
+    <linearGradient id="wf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#112238" />
+      <stop offset="1" stop-color="#168d91" />
+    </linearGradient>
+  </defs>
+  <text x="6" y="86" font-family="Georgia, 'Times New Roman', serif" font-size="88" font-weight="700" letter-spacing="-4"><tspan fill="url(#wf)">WF</tspan><tspan fill="#112238">Systems</tspan></text>
+  <circle cx="569" cy="84" r="5" fill="#dc674d" />
+</svg>

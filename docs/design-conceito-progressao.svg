@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1660" role="img" aria-labelledby="title desc">
+  <title id="title">WFSystems — conceito visual de progressão clara para escura</title>
+  <desc id="desc">Prancha ilustrativa de três momentos da landing page: abertura clara, dor do comerciante em tom intermediário e demonstração do sistema em ambiente escuro.</desc>
+  <defs>
+    <linearGradient id="middle" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#F5F8F7"/>
+      <stop offset="1" stop-color="#DCEBEA"/>
+    </linearGradient>
+    <linearGradient id="deep" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCEBEA"/>
+      <stop offset="0.18" stop-color="#25445B"/>
+      <stop offset="0.52" stop-color="#112238"/>
+      <stop offset="1" stop-color="#0C1B2D"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#168D91"/>
+      <stop offset="1" stop-color="#48D6CE"/>
+    </linearGradient>
+    <filter id="smokeBlur" x="-20%" y="-80%" width="140%" height="260%">
+      <feGaussianBlur stdDeviation="27"/>
+    </filter>
+  </defs>
+
+  <!-- Abertura: a oferta é explícita antes de qualquer efeito. -->
+  <rect width="1200" height="610" fill="#F5F8F7"/>
+  <rect x="42" y="28" width="1116" height="552" rx="28" fill="#FFFFFF" stroke="#DDE8E8"/>
+  <g transform="translate(82 62)">
+    <path d="M0 4 9 39 20 18 31 39 40 4" fill="none" stroke="#112238" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M52 39V4h20M52 22h17" fill="none" stroke="#159C9D" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="73" cy="40" r="3" fill="#DC674D"/>
+    <text x="91" y="33" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#112238">WFSystems</text>
+  </g>
+  <text x="793" y="88" font-family="Arial, sans-serif" font-size="16" fill="#3D586D">Solução</text>
+  <text x="880" y="88" font-family="Arial, sans-serif" font-size="16" fill="#3D586D">Como funciona</text>
+  <text x="1022" y="88" font-family="Arial, sans-serif" font-size="16" fill="#3D586D">Sobre</text>
+  <text x="84" y="178" font-family="Arial, sans-serif" font-size="15" font-weight="700" letter-spacing="2" fill="#168D91">PLATAFORMA PARA PEQUENOS NEGÓCIOS</text>
+  <text x="84" y="236" font-family="Georgia, serif" font-size="44" font-weight="700" fill="#112238">
+    <tspan x="84" dy="0">Seu catálogo, seus pedidos</tspan>
+    <tspan x="84" dy="55">e suas vendas em uma</tspan>
+    <tspan x="84" dy="55">plataforma com a sua marca.</tspan>
+  </text>
+  <text x="84" y="420" font-family="Arial, sans-serif" font-size="18" fill="#3D586D">
+    <tspan x="84">Uma vitrine própria e um sistema para acompanhar</tspan>
+    <tspan x="84" dy="28">pedidos, registrar vendas e entender sua rotina.</tspan>
+  </text>
+  <rect x="84" y="492" width="322" height="54" rx="13" fill="#112238"/>
+  <text x="108" y="527" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF">Conversar sobre minha plataforma  →</text>
+
+  <rect x="652" y="161" width="454" height="386" rx="23" fill="#112238"/>
+  <text x="679" y="194" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5" fill="#84E4DE">DEMONSTRAÇÃO ILUSTRATIVA</text>
+  <rect x="674" y="213" width="410" height="307" rx="13" fill="#F8FBFA"/>
+  <rect x="674" y="213" width="410" height="44" rx="13" fill="#E7F1F0"/>
+  <text x="689" y="241" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#116E75">Catálogo</text>
+  <text x="773" y="241" font-family="Arial, sans-serif" font-size="13" fill="#3D586D">Pedidos</text>
+  <text x="855" y="241" font-family="Arial, sans-serif" font-size="13" fill="#3D586D">PDV</text>
+  <text x="910" y="241" font-family="Arial, sans-serif" font-size="13" fill="#3D586D">Relatórios</text>
+  <rect x="695" y="279" width="366" height="38" rx="9" fill="#FFFFFF" stroke="#C8DBD9"/>
+  <text x="710" y="303" font-family="Arial, sans-serif" font-size="13" fill="#647D86">⌕  Buscar produto ou categoria</text>
+  <g font-family="Arial, sans-serif" font-size="12" fill="#112238">
+    <rect x="695" y="338" width="108" height="142" rx="10" fill="#FFFFFF" stroke="#DAE6E4"/>
+    <rect x="706" y="349" width="86" height="73" rx="7" fill="#E9DDE8"/>
+    <circle cx="749" cy="385" r="17" fill="#C7AEC1"/>
+    <text x="706" y="445">Brisa Floral</text><text x="706" y="464" font-weight="700">R$ 39,00</text>
+    <rect x="824" y="338" width="108" height="142" rx="10" fill="#FFFFFF" stroke="#DAE6E4"/>
+    <rect x="835" y="349" width="86" height="73" rx="7" fill="#E3E8D4"/>
+    <circle cx="878" cy="385" r="17" fill="#B7C59E"/>
+    <text x="835" y="445">Essência Verde</text><text x="835" y="464" font-weight="700">R$ 47,00</text>
+    <rect x="953" y="338" width="108" height="142" rx="10" fill="#FFFFFF" stroke="#DAE6E4"/>
+    <rect x="964" y="349" width="86" height="73" rx="7" fill="#E3DAD2"/>
+    <circle cx="1007" cy="385" r="17" fill="#CDB9A8"/>
+    <text x="964" y="445">Linho Areia</text><text x="964" y="464" font-weight="700">R$ 59,00</text>
+  </g>
+
+  <!-- A dor faz a ponte entre a conversa pessoal e a interface. -->
+  <rect y="610" width="1200" height="410" fill="url(#middle)"/>
+  <text x="86" y="689" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#116E75">A ROTINA DE QUEM VENDE</text>
+  <text x="86" y="752" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#112238">Você divulga nos Stories.</text>
+  <text x="86" y="801" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#112238">Mas onde o cliente encontra tudo depois?</text>
+  <text x="88" y="857" font-family="Arial, sans-serif" font-size="18" fill="#3D586D">Um lugar fixo para pesquisar, comparar preços e voltar quando quiser.</text>
+  <rect x="87" y="897" width="292" height="67" rx="16" fill="#FFFFFF" stroke="#C8DEDC"/>
+  <text x="110" y="937" font-family="Arial, sans-serif" font-size="16" fill="#112238">Produtos espalhados</text>
+  <path d="M390 931h50" stroke="#168D91" stroke-width="3"/>
+  <path d="m430 922 12 9-12 9" fill="none" stroke="#168D91" stroke-width="3"/>
+  <rect x="456" y="897" width="327" height="67" rx="16" fill="#FFFFFF" stroke="#C8DEDC"/>
+  <text x="480" y="937" font-family="Arial, sans-serif" font-size="16" fill="#112238">Catálogo pesquisável</text>
+
+  <!-- O produto ganha profundidade, mantendo texto e controles legíveis. -->
+  <rect y="1020" width="1200" height="640" fill="url(#deep)"/>
+  <!-- Névoa orgânica estática na passagem entre as seções; fica atrás de todo o conteúdo. -->
+  <g filter="url(#smokeBlur)" opacity="0.75">
+    <path d="M-90 1041 C95 990 208 1093 346 1015 C482 939 556 1041 685 993 C823 943 968 1051 1290 974 L1290 1082 C1111 1063 1032 1137 879 1109 C722 1081 614 1152 464 1092 C278 1019 172 1154 -90 1097 Z" fill="#DCEBEA"/>
+    <path d="M-70 1015 C97 1032 170 960 319 1012 C478 1068 537 965 686 1019 C825 1069 979 974 1272 1028 L1272 1118 C1060 1068 965 1168 802 1096 C665 1036 602 1141 424 1083 C286 1038 129 1116 -70 1081 Z" fill="#8DB9BC" opacity="0.66"/>
+    <path d="M-88 965 C95 1034 178 941 348 994 C521 1047 584 964 755 1016 C939 1073 1076 1008 1285 1040 L1285 1081 C1060 1046 941 1125 763 1075 C620 1035 518 1124 361 1055 C199 990 115 1083 -88 1037 Z" fill="#315D6E" opacity="0.52"/>
+  </g>
+  <g opacity="0.5">
+    <path d="M0 1032 C146 1003 231 1063 353 1029 C520 982 628 1049 742 1015 C927 962 1068 1039 1200 1006" fill="none" stroke="#E8F3F0" stroke-width="22" stroke-linecap="round" filter="url(#smokeBlur)"/>
+  </g>
+  <rect y="1120" width="1200" height="540" fill="#112238" opacity="0.24"/>
+  <text x="85" y="1160" font-family="Arial, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#84E4DE">SOLUÇÃO EM AÇÃO</text>
+  <text x="85" y="1219" font-family="Georgia, serif" font-size="39" font-weight="700" fill="#FFFFFF">Veja como a venda acontece.</text>
+  <text x="86" y="1280" font-family="Arial, sans-serif" font-size="17" fill="#C7D7DC">01  O cliente encontra os produtos no catálogo.</text>
+  <text x="86" y="1330" font-family="Arial, sans-serif" font-size="17" fill="#C7D7DC">02  Escolhe os itens e confere o pedido.</text>
+  <rect x="70" y="1355" width="480" height="59" rx="13" fill="#21485B" stroke="#48D6CE"/>
+  <text x="86" y="1392" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">03  A mensagem fica pronta; ele toca em Enviar.</text>
+  <text x="86" y="1458" font-family="Arial, sans-serif" font-size="17" fill="#C7D7DC">Depois: a visão do lojista.</text>
+  <text x="86" y="1488" font-family="Arial, sans-serif" font-size="17" fill="#C7D7DC">Painel → PDV → relatório.</text>
+  <rect x="628" y="1160" width="492" height="369" rx="22" fill="#0A1929" stroke="#4C7783"/>
+  <rect x="650" y="1181" width="448" height="51" rx="11" fill="#173348"/>
+  <text x="674" y="1214" font-family="Arial, sans-serif" font-size="17" font-weight="700" fill="#FFFFFF">WFSystems / Prévia do fluxo</text>
+  <rect x="650" y="1250" width="448" height="246" rx="11" fill="#F5F8F7"/>
+  <text x="674" y="1282" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#112238">Resumo do pedido · loja fictícia</text>
+  <path d="M674 1302h398" stroke="#D5E3E2" stroke-width="2"/>
+  <text x="674" y="1335" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">1 × Brisa Floral</text>
+  <text x="1007" y="1335" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">R$ 39</text>
+  <text x="674" y="1370" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">1 × Essência Verde</text>
+  <text x="1007" y="1370" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">R$ 47</text>
+  <path d="M674 1392h398" stroke="#D5E3E2" stroke-width="2"/>
+  <text x="674" y="1427" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#112238">Total</text>
+  <text x="1002" y="1427" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#112238">R$ 86</text>
+  <rect x="674" y="1444" width="398" height="35" rx="8" fill="url(#accent)"/>
+  <text x="751" y="1467" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#092439">Abrir mensagem no WhatsApp</text>
+  <text x="86" y="1581" font-family="Arial, sans-serif" font-size="13" fill="#9FBDC6">Conceito visual · produtos e dados fictícios · nenhuma venda ou mensagem é enviada nesta prévia</text>
+</svg>

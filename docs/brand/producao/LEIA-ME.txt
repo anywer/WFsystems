@@ -1,0 +1,17 @@
+WF SYSTEMS — SVGs DE PRODUÇÃO
+
+Este pacote foi reconstruído diretamente a partir da arte aprovada.
+
+Características:
+- SVGs realmente vetoriais: não há PNG/JPG embutido.
+- Geometria externa do monograma extraída diretamente do desenho aprovado.
+- Transições azul/ciano preservadas por regiões vetoriais de alta fidelidade.
+- Wordmark e slogan convertidos em paths vetoriais; não dependem de fontes.
+- Fundos transparentes.
+- Versões para fundo claro, fundo escuro e monocromáticas.
+
+Observação importante:
+A arte original disponível é raster. Portanto, estes arquivos são uma vetorização
+de alta fidelidade do raster aprovado, e não uma recuperação de um arquivo-fonte
+vetorial original inexistente. O objetivo aqui foi preservar o desenho aprovado
+em vez de reinterpretá-lo.

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">WF — proposta de monograma unificado</title>
+  <desc id="desc">Letras WF na mesma tipografia serifada e no mesmo degradê do logo WFSystems.</desc>
+  <defs>
+    <linearGradient id="wf" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#112238" />
+      <stop offset="1" stop-color="#168d91" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="30" fill="#f5f8f7" />
+  <text x="11" y="112" fill="url(#wf)" font-family="Georgia, 'Times New Roman', serif" font-size="99" font-weight="700" letter-spacing="-8">WF</text>
+  <circle cx="137" cy="108" r="5" fill="#dc674d" />
+</svg>

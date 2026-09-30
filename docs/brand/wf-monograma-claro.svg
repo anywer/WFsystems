@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 210" role="img" aria-labelledby="title desc">
+  <title id="title">Monograma WFSystems para fundo claro</title>
+  <desc id="desc">Monograma angular WF em degradê de azul profundo, azul elétrico e ciano.</desc>
+  <defs>
+    <linearGradient id="left" x1="45" y1="20" x2="145" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2D6B"/><stop offset="1" stop-color="#0066FF"/>
+    </linearGradient>
+    <linearGradient id="center" x1="100" y1="62" x2="215" y2="170" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#00D4FF"/><stop offset="1" stop-color="#0066FF"/>
+    </linearGradient>
+    <linearGradient id="right" x1="170" y1="165" x2="350" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B2D6B"/><stop offset=".52" stop-color="#0066FF"/><stop offset="1" stop-color="#00D4FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M37 25h43l62 111-24 37z" fill="url(#left)"/>
+  <path d="M91 66h42l52 86h-46z" fill="url(#center)"/>
+  <path d="M149 153 228 25h139l-22 36h-95l-19 31h96l-22 36h-96l-25 40z" fill="url(#right)"/>
+</svg>

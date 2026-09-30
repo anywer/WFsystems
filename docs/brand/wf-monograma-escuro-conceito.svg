@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">WF — conceito para tema escuro</title>
+  <desc id="desc">Monograma geométrico WF em branco suave e turquesa sobre fundo azul-marinho com degradê discreto.</desc>
+  <defs>
+    <linearGradient id="fundo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#112238"/>
+      <stop offset="1" stop-color="#1C3C55"/>
+    </linearGradient>
+    <linearGradient id="turquesa" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#79E5DC"/>
+      <stop offset="1" stop-color="#38C5C1"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="34" fill="url(#fundo)"/>
+  <path d="M25 48 39 109 57 72 75 109 91 48" fill="none" stroke="#F5F8F7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 109V49h34M104 78h27" fill="none" stroke="url(#turquesa)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="137" cy="109" r="5" fill="#FF947C"/>
+</svg>

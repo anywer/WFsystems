@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 190" role="img" aria-labelledby="title desc">
+  <title id="title">WF Systems</title>
+  <desc id="desc">Assinatura horizontal azul da WF Systems para fundos claros.</desc>
+  <defs>
+    <linearGradient id="wf-light-horizontal-a" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B2D6B"/><stop offset="0.62" stop-color="#0066FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient>
+    <linearGradient id="wf-light-horizontal-b" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0B2D6B"/><stop offset="0.55" stop-color="#0066FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient>
+  </defs>
+  <g transform="translate(8 18) scale(.62)"><path d="M24 14h67l79 130 39-63h66l-71 119h-69z" fill="url(#wf-light-horizontal-a)"/><path d="M111 65h61l53 88 79-139h165l-31 52H337l-31 53h103l-31 51H276l-25 43h-66z" fill="url(#wf-light-horizontal-b)"/></g>
+  <text x="330" y="122" fill="#0B2D6B" font-family="Arial, Helvetica, sans-serif" font-size="86" letter-spacing="2"><tspan font-weight="800">WF</tspan><tspan font-weight="300"> SYSTEMS</tspan></text>
+</svg>

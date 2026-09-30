@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430 1880" role="img" aria-labelledby="title desc">
+  <title id="title">WFSystems — proposta visual para celular</title>
+  <desc id="desc">Estudo vertical da landing page no celular: abertura clara com oferta e plataforma, dor do comerciante, transição orgânica como névoa e demonstração escura com frases junto das ações.</desc>
+  <defs>
+    <linearGradient id="mistBack" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#E7F1F0"/>
+      <stop offset="0.35" stop-color="#AECFD0"/>
+      <stop offset="0.7" stop-color="#315D6E"/>
+      <stop offset="1" stop-color="#112238"/>
+    </linearGradient>
+    <linearGradient id="mint" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#15989A"/>
+      <stop offset="1" stop-color="#48D6CE"/>
+    </linearGradient>
+    <filter id="fog" x="-30%" y="-90%" width="160%" height="280%">
+      <feGaussianBlur stdDeviation="17"/>
+    </filter>
+  </defs>
+
+  <rect width="430" height="660" fill="#F5F8F7"/>
+  <rect x="16" y="16" width="398" height="628" rx="22" fill="#FFFFFF" stroke="#DEEBE9"/>
+  <g transform="translate(36 37)">
+    <path d="M0 4 7 31 15 15 23 31 30 4" fill="none" stroke="#112238" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M39 31V4h16M39 18h14" fill="none" stroke="#168D91" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="56" cy="32" r="2.4" fill="#DC674D"/>
+    <text x="70" y="27" font-family="Georgia, serif" font-size="22" font-weight="700" fill="#112238">WFSystems</text>
+  </g>
+  <rect x="356" y="39" width="37" height="30" rx="7" fill="#EDF4F3"/>
+  <path d="M365 48h19M365 54h19M365 60h19" stroke="#112238" stroke-width="2" stroke-linecap="round"/>
+  <text x="36" y="120" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2" fill="#168D91">PLATAFORMA PARA PEQUENOS NEGÓCIOS</text>
+  <text x="36" y="171" font-family="Georgia, serif" font-size="31" font-weight="700" fill="#112238">
+    <tspan x="36">Seu catálogo, seus</tspan>
+    <tspan x="36" dy="39">pedidos e suas vendas</tspan>
+    <tspan x="36" dy="39">em uma plataforma</tspan>
+    <tspan x="36" dy="39">com a sua marca.</tspan>
+  </text>
+  <text x="36" y="345" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">
+    <tspan x="36">Uma vitrine própria e um sistema para</tspan>
+    <tspan x="36" dy="22">acompanhar pedidos e registrar vendas.</tspan>
+  </text>
+  <rect x="36" y="397" width="358" height="47" rx="12" fill="#112238"/>
+  <text x="67" y="427" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">Conversar sobre minha plataforma  →</text>
+  <rect x="36" y="469" width="358" height="150" rx="16" fill="#112238"/>
+  <text x="54" y="493" font-family="Arial, sans-serif" font-size="10" font-weight="700" letter-spacing="1" fill="#84E4DE">DEMONSTRAÇÃO ILUSTRATIVA</text>
+  <rect x="50" y="505" width="330" height="101" rx="9" fill="#F8FBFA"/>
+  <text x="60" y="525" font-family="Arial, sans-serif" font-size="10" font-weight="700" fill="#116E75">Catálogo</text>
+  <text x="119" y="525" font-family="Arial, sans-serif" font-size="10" fill="#3D586D">Pedidos</text>
+  <text x="179" y="525" font-family="Arial, sans-serif" font-size="10" fill="#3D586D">PDV</text>
+  <text x="212" y="525" font-family="Arial, sans-serif" font-size="10" fill="#3D586D">Relatórios</text>
+  <rect x="60" y="537" width="310" height="19" rx="4" fill="#FFFFFF" stroke="#D4E2E0"/>
+  <text x="70" y="550" font-family="Arial, sans-serif" font-size="9" fill="#6F8790">⌕ Buscar produto ou categoria</text>
+  <rect x="60" y="564" width="92" height="32" rx="5" fill="#ECDDE6"/>
+  <rect x="162" y="564" width="92" height="32" rx="5" fill="#DDE9DB"/>
+  <rect x="264" y="564" width="106" height="32" rx="5" fill="#E9E1D8"/>
+
+  <rect y="660" width="430" height="355" fill="#E7F1F0"/>
+  <text x="36" y="714" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#116E75">A ROTINA DE QUEM VENDE</text>
+  <text x="36" y="759" font-family="Georgia, serif" font-size="27" font-weight="700" fill="#112238">
+    <tspan x="36">Você divulga nos Stories.</tspan>
+    <tspan x="36" dy="35">Mas onde o cliente</tspan>
+    <tspan x="36" dy="35">encontra tudo depois?</tspan>
+  </text>
+  <text x="36" y="889" font-family="Arial, sans-serif" font-size="15" fill="#3D586D">
+    <tspan x="36">Um lugar fixo para pesquisar produtos,</tspan>
+    <tspan x="36" dy="22">comparar preços e voltar quando quiser.</tspan>
+  </text>
+  <rect x="36" y="948" width="358" height="44" rx="12" fill="#FFFFFF" stroke="#C5DBD9"/>
+  <text x="55" y="975" font-family="Arial, sans-serif" font-size="13" fill="#112238">Stories divulgam  →  catálogo organiza</text>
+
+  <rect y="1015" width="430" height="220" fill="url(#mistBack)"/>
+  <rect y="1235" width="430" height="645" fill="#112238"/>
+  <g filter="url(#fog)" opacity="0.68">
+    <path d="M-45 1069 C35 1015 86 1090 154 1048 C223 1004 281 1109 367 1054 C412 1025 459 1069 480 1076 L480 1151 C411 1100 371 1187 301 1134 C235 1084 196 1179 124 1128 C51 1081 22 1187 -45 1145 Z" fill="#E0EFEB"/>
+    <path d="M-37 1087 C54 1138 90 1045 161 1099 C232 1152 271 1065 342 1122 C398 1167 449 1077 473 1130 L473 1209 C386 1145 334 1222 250 1162 C180 1114 134 1201 63 1162 C13 1132 -18 1190 -37 1169 Z" fill="#6AA0A8" opacity="0.61"/>
+  </g>
+  <rect y="1180" width="430" height="700" fill="#112238" opacity="0.18"/>
+
+  <text x="36" y="1269" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5" fill="#84E4DE">SOLUÇÃO EM AÇÃO</text>
+  <text x="36" y="1312" font-family="Georgia, serif" font-size="29" font-weight="700" fill="#FFFFFF">Veja como funciona.</text>
+  <rect x="36" y="1341" width="358" height="65" rx="13" fill="#21485B" stroke="#48D6CE"/>
+  <text x="52" y="1367" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#FFFFFF">01  O cliente encontra os produtos.</text>
+  <text x="52" y="1389" font-family="Arial, sans-serif" font-size="12" fill="#CBE6E7">Busca por nome, categoria e preço.</text>
+  <rect x="36" y="1423" width="358" height="185" rx="15" fill="#0A1929" stroke="#4C7783"/>
+  <rect x="51" y="1438" width="328" height="36" rx="8" fill="#173348"/>
+  <text x="65" y="1461" font-family="Arial, sans-serif" font-size="13" font-weight="700" fill="#FFFFFF">Catálogo da loja fictícia</text>
+  <rect x="51" y="1487" width="328" height="107" rx="8" fill="#F5F8F7"/>
+  <rect x="65" y="1501" width="300" height="26" rx="5" fill="#FFFFFF" stroke="#D5E3E2"/>
+  <text x="78" y="1519" font-family="Arial, sans-serif" font-size="10" fill="#6F8790">⌕ Buscar no catálogo</text>
+  <rect x="65" y="1537" width="86" height="43" rx="5" fill="#ECDDE6"/>
+  <rect x="160" y="1537" width="86" height="43" rx="5" fill="#DDE9DB"/>
+  <rect x="255" y="1537" width="110" height="43" rx="5" fill="#E9E1D8"/>
+  <text x="36" y="1657" font-family="Arial, sans-serif" font-size="14" fill="#C7D7DC">02  Ele escolhe e registra o pedido.</text>
+  <text x="36" y="1690" font-family="Arial, sans-serif" font-size="14" fill="#C7D7DC">03  Abre a mensagem e toca em Enviar.</text>
+  <path d="M36 1716h358" stroke="#426577" stroke-width="1"/>
+  <text x="36" y="1751" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#84E4DE">DEPOIS, A VISÃO DO LOJISTA</text>
+  <text x="36" y="1786" font-family="Arial, sans-serif" font-size="14" fill="#FFFFFF">Painel  →  PDV  →  Relatório mensal</text>
+  <text x="36" y="1840" font-family="Arial, sans-serif" font-size="10" fill="#9FBDC6">Estudo visual · dados e produtos fictícios</text>
+</svg>

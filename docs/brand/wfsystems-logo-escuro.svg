@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 230" role="img" aria-labelledby="title desc">
+  <title id="title">WFSystems para fundo escuro</title>
+  <desc id="desc">Monograma angular WF em azul e ciano com nome branco para fundos escuros.</desc>
+  <defs>
+    <linearGradient id="left" x1="30" y1="20" x2="128" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#168BFF"/><stop offset="1" stop-color="#0066FF"/></linearGradient>
+    <linearGradient id="center" x1="80" y1="62" x2="190" y2="170" gradientUnits="userSpaceOnUse"><stop stop-color="#00D4FF"/><stop offset="1" stop-color="#0879FF"/></linearGradient>
+    <linearGradient id="right" x1="135" y1="165" x2="320" y2="24" gradientUnits="userSpaceOnUse"><stop stop-color="#0A4DD9"/><stop offset=".52" stop-color="#0066FF"/><stop offset="1" stop-color="#00D4FF"/></linearGradient>
+  </defs>
+  <g transform="translate(4 18) scale(.82)">
+    <path d="M37 25h43l62 111-24 37z" fill="url(#left)"/><path d="M91 66h42l52 86h-46z" fill="url(#center)"/><path d="M149 153 228 25h139l-22 36h-95l-19 31h96l-22 36h-96l-25 40z" fill="url(#right)"/>
+  </g>
+  <text x="330" y="124" font-family="Arial, Helvetica, sans-serif" fill="#FFFFFF"><tspan font-size="84" font-weight="800" letter-spacing="-3">WF</tspan><tspan dx="14" font-size="66" font-weight="300" letter-spacing="2">SYSTEMS</tspan></text>
+  <text x="334" y="170" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="500" letter-spacing="9" fill="#D5E6FF">TECNOLOGIA <tspan fill="#00D4FF">•</tspan> SEGURANÇA <tspan fill="#00D4FF">•</tspan> RESULTADOS</text>
+</svg>

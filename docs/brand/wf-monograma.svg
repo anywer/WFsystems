@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-labelledby="title desc">
+  <title id="title">Monograma WF</title>
+  <desc id="desc">Iniciais WF em linhas geométricas sobre um quadrado azul-marinho arredondado.</desc>
+  <rect width="160" height="160" rx="34" fill="#112238"/>
+  <path d="M25 48 39 109 57 72 75 109 91 48" fill="none" stroke="#F5F8F7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 109V49h34M104 78h27" fill="none" stroke="#48D6CE" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="137" cy="109" r="5" fill="#FF866A"/>
+</svg>

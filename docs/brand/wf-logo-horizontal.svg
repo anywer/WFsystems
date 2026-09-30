@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 650 160" role="img" aria-labelledby="title desc">
+  <title id="title">WF WFSistens — desenvolvimento digital</title>
+  <desc id="desc">Monograma WF ao lado do nome WFSistens e da assinatura Landing Pages e SaaS.</desc>
+  <rect width="160" height="160" rx="34" fill="#112238"/>
+  <path d="M25 48 39 109 57 72 75 109 91 48" fill="none" stroke="#F5F8F7" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M104 109V49h34M104 78h27" fill="none" stroke="#48D6CE" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="137" cy="109" r="5" fill="#FF866A"/>
+  <text x="188" y="78" fill="#112238" font-family="Arial, Helvetica, sans-serif" font-size="51" font-weight="700" letter-spacing="-2">WFSistens</text>
+  <text x="191" y="111" fill="#3D586D" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" letter-spacing="2.7">LANDING PAGES · SAAS</text>
+</svg>
