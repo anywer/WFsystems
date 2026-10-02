@@ -2,38 +2,45 @@ const scenes = {
   catalogo: {
     kicker: 'Visão do comprador · Catálogo',
     heading: 'Encontre os produtos',
-    rows: [['⌕  Buscar produto ou categoria'], ['Brisa Floral', 'R$ 39,00'], ['Essência Verde', 'R$ 47,00']],
-    note: 'Exemplo fictício · sem compras nesta página',
+    image: 'assets/demo/gm-catalogo-home-real.png',
+    alt: 'Catálogo real da GM Perfumaria em funcionamento',
+    note: 'Tela real do catálogo demonstrativo',
   },
   pedido: {
     kicker: 'Visão do comprador · Pedido',
     heading: 'Confira os itens',
-    rows: [['1 × Brisa Floral', 'R$ 39,00'], ['1 × Essência Verde', 'R$ 47,00'], ['Total', 'R$ 86,00']],
-    note: 'Os nomes e valores são apenas ilustrativos',
+    image: 'assets/demo/gm-carrinho-real.png',
+    alt: 'Carrinho real da GM Perfumaria com dois produtos',
+    note: 'Tela real do carrinho demonstrativo',
   },
   whatsapp: {
     kicker: 'Visão do comprador · WhatsApp',
     heading: 'Mensagem preparada',
-    rows: [['Pedido com 2 itens'], ['Resumo e total preenchidos'], ['O comprador toca em Enviar']],
-    note: 'Nenhuma mensagem é enviada automaticamente',
+    image: 'assets/demo/gm-whatsapp-real.png',
+    alt: 'Página real de continuação no WhatsApp com a mensagem do pedido preparada',
+    note: 'Tela real da continuação do pedido no WhatsApp',
+    focusMessage: true,
   },
   painel: {
     kicker: 'Visão do lojista · Painel',
     heading: 'Acompanhe o pedido',
-    rows: [['Pedido fictício #EX-104'], ['Status visível no painel'], ['Ação conferida pelo lojista']],
-    note: 'A mudança para a visão administrativa é ilustrativa',
+    image: 'assets/demo/gm-pedidos-real.png',
+    alt: 'Painel real de pedidos online com pedido de demonstração e status',
+    note: 'Tela real do painel com um pedido de demonstração',
   },
   pdv: {
     kicker: 'Visão do lojista · PDV',
     heading: 'Registre a venda',
-    rows: [['Pedido aberto no PDV'], ['Pagamento conferido manualmente'], ['Venda registrada']],
-    note: 'Não representa cobrança automática ou nota fiscal',
+    image: 'assets/demo/gm-pdv-real.png',
+    alt: 'PDV real com produtos, forma de pagamento e total da venda',
+    note: 'Tela real do PDV com uma venda de demonstração',
   },
   relatorio: {
     kicker: 'Visão do lojista · Relatório',
     heading: 'Consulte o mês',
-    rows: [['Registros do mês'], ['Origem online'], ['Origem presencial']],
-    note: 'Exemplo fictício, sem resultados comerciais reais',
+    image: 'assets/demo/gm-relatorio-mensal-real.png',
+    alt: 'Relatório mensal real com filtros, indicadores e tabela de registros',
+    note: 'Tela real do relatório mensal com filtro por origem',
   },
 };
 
@@ -54,29 +61,19 @@ const storySteps = [...document.querySelectorAll('[data-step]')];
 const storySection = document.querySelector('#como-funciona');
 const sceneKicker = document.querySelector('#scene-kicker');
 const sceneHeading = document.querySelector('#scene-heading');
-const sceneContent = document.querySelector('#scene-content');
+const sceneImage = document.querySelector('#scene-image');
 const sceneNote = document.querySelector('#scene-note');
 
 function showScene(key) {
   const scene = scenes[key];
-  if (!scene || !sceneKicker || !sceneHeading || !sceneContent || !sceneNote) return;
+  if (!scene || !sceneKicker || !sceneHeading || !sceneImage || !sceneNote) return;
 
   sceneKicker.textContent = scene.kicker;
   sceneHeading.textContent = scene.heading;
   sceneNote.textContent = scene.note;
-  sceneContent.replaceChildren(...scene.rows.map(([label, value]) => {
-    const row = document.createElement('div');
-    row.className = 'scene-row';
-    const name = document.createElement('span');
-    name.textContent = label;
-    row.append(name);
-    if (value) {
-      const amount = document.createElement('strong');
-      amount.textContent = value;
-      row.append(amount);
-    }
-    return row;
-  }));
+  sceneImage.src = scene.image;
+  sceneImage.alt = scene.alt;
+  sceneImage.classList.toggle('capture-focus-message', Boolean(scene.focusMessage));
 
   storySteps.forEach((step) => step.classList.toggle('is-active', step.dataset.step === key));
 }
@@ -115,10 +112,10 @@ if (storySection && storySteps.length) {
 }
 
 const previewSlides = [...document.querySelectorAll('[data-preview-slide]')];
-const previewDots = [...document.querySelectorAll('[data-preview-dot]')];
 const preview = document.querySelector('.hero-preview');
-if (preview && previewSlides.length && previewDots.length === previewSlides.length) {
+if (preview && previewSlides.length) {
   const count = document.querySelector('#preview-count');
+  const previewIndex = document.querySelector('#preview-index');
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let current = 0;
   let timer;
@@ -131,13 +128,12 @@ if (preview && previewSlides.length && previewDots.length === previewSlides.leng
       slide.hidden = !selected;
       slide.classList.toggle('is-current', selected);
     });
-    previewDots.forEach((dot, dotIndex) => {
-      const selected = dotIndex === current;
-      dot.classList.toggle('is-current', selected);
-      if (selected) dot.setAttribute('aria-current', 'true');
-      else dot.removeAttribute('aria-current');
-    });
     if (count) count.textContent = `${current + 1} / ${previewSlides.length}`;
+    if (previewIndex) {
+      previewIndex.classList.remove('is-visible');
+      previewIndex.textContent = String(current + 1);
+      window.requestAnimationFrame(() => window.requestAnimationFrame(() => previewIndex.classList.add('is-visible')));
+    }
   }
 
   function stopPreview() {
@@ -154,7 +150,6 @@ if (preview && previewSlides.length && previewDots.length === previewSlides.leng
 
   document.querySelector('#preview-prev')?.addEventListener('click', () => { showPreview(current - 1); startPreview(); });
   document.querySelector('#preview-next')?.addEventListener('click', () => { showPreview(current + 1); startPreview(); });
-  previewDots.forEach((dot, index) => dot.addEventListener('click', () => { showPreview(index); startPreview(); }));
   preview.addEventListener('mouseenter', stopPreview);
   preview.addEventListener('mouseleave', startPreview);
   preview.addEventListener('focusin', stopPreview);
@@ -188,6 +183,7 @@ if (leadForm) {
   const send = leadForm.querySelector('#form-send');
   const summary = leadForm.querySelector('#lead-summary');
   const fields = [leadForm.elements.tipo, leadForm.elements.divulgacao, leadForm.elements.dificuldade, leadForm.elements.nome];
+  const aboutBusiness = leadForm.elements.sobreNegocio;
   const labels = ['Negócio', 'Divulgação atual', 'Maior dificuldade', 'Nome'];
   const whatsapp = (leadForm.dataset.whatsapp || '').replace(/\D/g, '');
   const validWhatsapp = /^55[1-9]{2}9\d{8}$/.test(whatsapp);
@@ -199,11 +195,13 @@ if (leadForm) {
   }
 
   function renderSummary() {
-    summary.replaceChildren(...fields.flatMap((field, index) => {
+    const entries = fields.map((field, index) => [labels[index], field.value.trim()]);
+    if (aboutBusiness.value.trim()) entries.push(['Sobre o negócio', aboutBusiness.value.trim()]);
+    summary.replaceChildren(...entries.flatMap(([label, answer]) => {
       const term = document.createElement('dt');
-      term.textContent = labels[index];
+      term.textContent = label;
       const value = document.createElement('dd');
-      value.textContent = field.value.trim();
+      value.textContent = answer;
       return [term, value];
     }));
   }
@@ -211,9 +209,9 @@ if (leadForm) {
   function showFormStep(index) {
     currentStep = index;
     formSteps.forEach((step, stepIndex) => step.classList.toggle('is-current', stepIndex === index));
-    progress.textContent = index < fields.length ? `Pergunta ${index + 1} de ${fields.length}` : 'Confira seu resumo';
+    progress.textContent = index < fields.length ? `${index + 1}–${fields.length}` : 'Confira seu resumo';
     back.hidden = index === 0;
-    next.hidden = index === fields.length;
+    next.hidden = index !== fields.length - 1;
     send.hidden = index !== fields.length;
     if (index === fields.length) {
       renderSummary();
@@ -237,6 +235,11 @@ if (leadForm) {
   }
 
   next.addEventListener('click', advance);
+  fields.slice(0, -1).forEach((field, index) => {
+    field.addEventListener('change', () => {
+      if (currentStep === index && field.value.trim() && field.checkValidity()) advance();
+    });
+  });
   back.addEventListener('click', () => {
     showFormStep(Math.max(0, currentStep - 1));
     fields[currentStep].focus();
@@ -252,8 +255,9 @@ if (leadForm) {
       `Negócio: ${fields[0].value}`,
       `Como divulgo hoje: ${fields[1].value}`,
       `Maior dificuldade: ${fields[2].value}`,
-    ].join('\n');
-    window.location.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+    ];
+    if (aboutBusiness.value.trim()) message.push(`Um pouco mais sobre mim e o negócio: ${aboutBusiness.value.trim()}`);
+    window.location.href = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message.join('\n'))}`;
   });
 
   showFormStep(0);

@@ -1,50 +1,46 @@
-# Revisão da primeira implementação — WFSystems
+# Revisão de qualidade do frontend — WFSystems
 
-> Revisão mais recente da identidade visual: `reports/frontend-quality-gate-identity.md`.
+Data da revisão: 02/10/2026.
+Status: **Aprovado com observações**.
 
-Atualização posterior: **verificação rápida** da configuração do número corrigido. A página agora usa `5517981221449`; a abertura da conversa continua dependente do clique do visitante ao fim do formulário, e não envia mensagens automaticamente. A revisão visual real em navegador segue pendente. Status desta rodada: **Aprovado com observações** para protótipo local.
+## Escopo revisado
 
-## Escopo e nível
-
-**Auditoria profunda** da primeira página local em `index.html`, `styles.css` e `script.js`: conteúdo, adaptação responsiva, demonstração guiada pela rolagem e formulário de contato. É uma revisão do protótipo D11–D14, não uma aprovação para publicação.
+Revisão das 28 anotações aplicadas em `index.html`, `styles.css` e `script.js`, incluindo a nova abertura pela dor do cliente, capturas reais, carrossel, comparação entre Instagram e catálogo, resumo dos módulos, apresentação de Willy, formulário guiado e rodapé.
 
 ## Validações executadas
 
 - `node --check script.js`: passou.
-- `node --test tests/site-check.cjs`: 8 testes passaram, cobrindo conteúdo essencial, distinção comprador/lojista, ausência de envio automático, imagem provisória identificada, estado sem WhatsApp, rejeição do número com dígito extra, validação das perguntas e formação da URL quando um número válido é configurado.
-- Busca estática por `innerHTML`, `eval`, armazenamento local, requisições e WebSocket: nenhum uso encontrado. A única URL externa no código é `https://wa.me/`, acionada apenas pelo visitante quando o número estiver configurado.
-- Revisão manual do HTML, CSS e JavaScript: estrutura semântica, foco visível, menu para celular, texto de aviso dos exemplos fictícios, fallback estático da história, preferência por movimento reduzido e ausência de dependências externas.
+- `node --test tests/site-check.cjs`: 14 de 14 testes passaram.
+- `git diff --check`: passou; apenas avisos de conversão LF/CRLF do Git.
+- Busca por `innerHTML`, `outerHTML`, `eval`, `new Function`, armazenamento local, cookies, requisições e WebSocket no frontend: nenhum uso encontrado.
+- Navegador real em 1440 × 1000 e 390 × 844: abertura, carrossel, formulário, resumo, rodapé e adaptação móvel verificados.
+- As quatro novas capturas foram verificadas no carrossel e nas etapas por rolagem; no celular, as seis etapas exibem as capturas correspondentes em vez dos antigos cartões ilustrativos.
+- Console do navegador: nenhum erro ou aviso durante a revisão.
 
-## Problemas encontrados e correções
+## Resultado visual e funcional
 
-- **Importante — cabeçalho em telas estreitas (inferido da soma dos elementos):** o botão completo poderia competir com logo e menu. Corrigido com rótulo compacto “Contato” e logo menor no menor intervalo.
-- **Importante — transição visual entre seções (inferido do CSS):** a primeira versão começava a seção escura de forma abrupta. Corrigido com fundo progressivo e névoa estática atrás do texto.
-- **Refinamento — menu móvel:** links agora fecham o menu após a navegação.
-- **Refinamento — tela de computador baixa:** altura mínima da prévia reduzida e posição ajustada para diminuir risco de corte.
-- **Resolvido — WhatsApp:** após corrigir a sequência inicial ambígua, Willy confirmou `17 98122-1449`. O formulário usa o link internacional `5517981221449`; o botão fica disponível somente depois das quatro respostas.
-- **Observação — foto:** foi integrada uma foto gerada de personagem fictício como provisória, com aviso visível sobre a própria imagem de que não representa Willy. Ela precisa ser substituída pela foto real antes de publicar para sustentar o vínculo pessoal pretendido.
-- **Observação — formulário:** as alternativas são uma primeira proposta e precisam de revisão de Willy antes de serem tratadas como definitivas.
+- A abertura apresenta a dor antes da solução e mantém apenas um `h1`.
+- Os três cartões da operação têm destaque por hover apenas em dispositivos que suportam hover; toque não depende desse efeito.
+- O carrossel usa área visual com proporção fixa, setas redesenhadas e indicador numérico com transição de opacidade. As telas reais verificadas mantiveram a mesma altura (aproximadamente 582 px no painel e 317,5 px na área da imagem no viewport de teste).
+- As sete telas do carrossel são capturas do projeto em funcionamento com dados de demonstração: catálogo, carrinho, acesso ao painel, pedidos, continuação no WhatsApp, PDV e relatório mensal. A comparação com os Stories usa um perfil comercial inteiramente fictício, sem arroba, pessoas, métricas, links ou marca de uma conta existente.
+- A seção “O que você vai receber” foi simplificada para uma lista em duas colunas no computador e uma coluna em telas pequenas.
+- O formulário avança automaticamente nas três perguntas de seleção. A quarta etapa mostra nome, campo opcional sobre o negócio e botão “Avançar”. O texto opcional entra no resumo e na mensagem somente quando preenchido.
+- O rodapé agora reúne posicionamento, navegação, WhatsApp, responsável pelo atendimento e direitos autorais.
 
-## Qualidade de código e integração
+## Acessibilidade e responsividade
 
-HTML, CSS e JavaScript locais, sem dependências. A prévia da plataforma usa elementos ilustrativos, não dados ou código do RA_GMSTORE. A demonstração muda o quadro de apoio no computador usando `IntersectionObserver`; os textos das seis etapas permanecem no HTML e, no celular, cada etapa tem seu próprio resumo visual estático. O formulário não grava respostas e só constrói uma URL do WhatsApp depois de validar as quatro respostas e encontrar um número configurado.
+- Hierarquia de títulos, rótulos de formulário, link de salto, foco visível, botões com nomes acessíveis e aviso dinâmico do progresso foram preservados.
+- O fluxo funciona por teclado; pressionar Enter na última pergunta abre o resumo sem enviar dados.
+- `prefers-reduced-motion` continua reduzindo animações e transições.
+- Não foi observada rolagem horizontal nos viewports testados.
 
-## Performance e fluidez
+## Performance e manutenção
 
-**Inferido do código:** sem fontes externas, vídeos, bibliotecas ou eventos de rolagem por frame. A névoa é estática. O efeito usa um observador de visibilidade apenas em larguras de computador e se desconecta ao sair desse intervalo. A foto provisória tem cerca de 2 MB e usa carregamento tardio por estar abaixo da primeira tela. **Não medido:** tempo de carregamento, fluidez real, consumo de memória e Core Web Vitals.
+- As novas imagens usam dimensões explícitas e carregamento tardio quando estão fora da primeira tela.
+- A nova composição do perfil fictício foi otimizada de 1.705.177 bytes em PNG para 196.306 bytes em JPEG antes de ser ligada à página.
+- A troca de cenas reutiliza um único elemento de imagem; o carrossel pausa fora da área visível, quando a aba está oculta, durante hover/foco e quando o usuário prefere menos movimento.
+- Não foram adicionadas bibliotecas externas. O utilitário local `tools/capture-server.cjs` existe apenas para repetir capturas da demonstração e não é carregado pelo site.
 
-## Responsividade e acessibilidade
+## Observação conhecida
 
-**Verificado estaticamente:** pontos de adaptação em 900, 700 e 390 px; rótulos de formulário, foco visível, link para pular ao conteúdo, menu operável como `details`, avisos de exemplo fictício, resumo do formulário e preferência por movimento reduzido. **Não testado em navegador/dispositivo:** renderização real, zoom, toque, leitura por tecnologia assistiva, contraste automatizado, orientação paisagem e ausência de rolagem horizontal.
-
-## Regressão
-
-Os oito testes passaram novamente após a integração da foto e o endurecimento da validação do número. Não havia implementação anterior a preservar neste projeto.
-
-## Limitações
-
-O navegador automatizado disponível retornou erro ao carregar sua política de requisições e não listou abas ou navegadores na tentativa anterior. Não há Playwright ou Puppeteer instalado neste projeto, e nenhuma dependência foi instalada. Por isso, a aparência e a interação reais ainda precisam de uma revisão em navegador por Willy e de uma nova rodada de QA antes do D18 e da publicação. O clique final que abre o WhatsApp real ainda não foi executado nesta revisão.
-
-## Status
-
-**Aprovado com observações** para revisão local como protótipo. A publicação permanece pendente de substituição da foto provisória, revisão do formulário e testes em navegador.
+As capturas de pedidos, WhatsApp, PDV e relatório usam dados de demonstração fornecidos por Willy. O relatório está em um estado vazio, com os indicadores zerados; ele comprova a estrutura e os filtros da tela, mas não demonstra uma venda registrada no período.
